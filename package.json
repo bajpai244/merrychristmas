@@ -8,12 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "10.0.3",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "theme-ui": "^0.6.0-alpha.3",
     "@babel/core": "^7.12.10",
     "@babel/plugin-transform-react-jsx": "^7.12.11",
-    "@theme-ui/presets": "^0.3.4"
+    "@theme-ui/presets": "^0.3.4",
+    "next": "10.0.3",
+    "react": "17.0.1",
+    "react-audio-player": "^0.14.0",
+    "react-dom": "17.0.1",
+    "theme-ui": "^0.6.0-alpha.3",
+    "use-sound": "^2.0.1"
   }
 }

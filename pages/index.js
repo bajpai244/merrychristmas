@@ -1,13 +1,31 @@
+import { useEffect } from 'react'
 import { Flex, Input, Button } from 'theme-ui'
 import Head from 'next/head'
+import Audio from 'react-audio-player'
+import useSound from 'use-sound'
 
 export default function Home() {
+  const [play] = useSound(
+    'https://cloud-b76lt9t11.vercel.app/0christmas_-_harry_connick_jr._-_sleigh_ride.mp3'
+  )
+
+  useEffect(() => {
+    play()
+  })
+
   return (
-    <div>
+    <div
+      sx={{
+        fontFamily: 'xmas',
+        backgroundColor: 'yellow',
+        backgroundImage: 'url(https://cloud-g8j7gwo2r.vercel.app/0image.png)',
+        width: '100vw',
+        height: '100vh',
+      }}>
       <Head>
         <title>Merry Christmas</title>
       </Head>
-      <Flex sx={{ width: '100vw', height: '100vh' }}>
+      <Flex sx={{ width: '100vw' }}>
         <div
           sx={{
             flex: 1,
@@ -48,7 +66,8 @@ export default function Home() {
                 transform: 'scale(1.05)',
                 transition: '0.2s',
               },
-            }}>
+            }}
+            onClick={() => {}}>
             Submit!
           </Button>
         </div>
