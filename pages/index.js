@@ -15,7 +15,7 @@ const Clicked = (num) => {
     alert(more)
   }
   if (num == 27) {
-    alert('Merrrrrrrrrrrrrrrry Christmas!')
+    alert('Woohoo!  You got it right!  Merry Christmas from Hack Club 🎅')
   }
 }
 
@@ -60,11 +60,11 @@ export default function Home() {
           }}>
           <h1 sx={{ textAlign: 'center', mb: [0], fontSize: [11] }}>
             <span sx={{ color: 'blue' }}>Ho</span>
-            <span sx={{ color: 'pink' }}>ho</span>
+            <span sx={{ color: 'red' }}>ho</span>
             <span sx={{ color: 'purple' }}>ho!</span>
           </h1>
           <h1 sx={{ textAlign: 'center', mt: [0], fontSize: [7] }}>
-            How many <span sx={{ color: 'red' }}> Hack Clubbers </span> can you
+            How many <span sx={{ fontSize: [8] }}> Hack Clubbers </span> can you
             find?
           </h1>
           <Input
