@@ -1,8 +1,23 @@
 import { useEffect } from 'react'
 import { Flex, Input, Button } from 'theme-ui'
 import Head from 'next/head'
-import Audio from 'react-audio-player'
 import useSound from 'use-sound'
+
+const Clicked = (num) => {
+  const less =
+    'Hey = your guess is < actual number of Hack Clubbers, try again!'
+  const more =
+    'Hey = your guess is > actual number of Hack Clubbers, try again!'
+  if (num < 27) {
+    alert(less)
+  }
+  if (num > 27) {
+    alert(more)
+  }
+  if (num == 27) {
+    alert('Merrrrrrrrrrrrrrrry Christmas!')
+  }
+}
 
 export default function Home() {
   const [play] = useSound(
@@ -43,16 +58,17 @@ export default function Home() {
             alignItems: 'center',
             justifyContent: 'center',
           }}>
-          <h1 sx={{ textAlign: 'center', mb: [0], fontSize: [9] }}>
+          <h1 sx={{ textAlign: 'center', mb: [0], fontSize: [11] }}>
             <span sx={{ color: 'blue' }}>Ho</span>
-            <span sx={{ color: 'yellow' }}>ho</span>
+            <span sx={{ color: 'pink' }}>ho</span>
             <span sx={{ color: 'purple' }}>ho!</span>
           </h1>
-          <h1 sx={{ textAlign: 'center', mt: [0] }}>
+          <h1 sx={{ textAlign: 'center', mt: [0], fontSize: [7] }}>
             How many <span sx={{ color: 'red' }}> Hack Clubbers </span> can you
             find?
           </h1>
           <Input
+            id='inp'
             placeholder='Enter the number here (:'
             sx={{ borderRadius: ['5px'], width: [200], pl: [2] }}
           />
@@ -67,9 +83,12 @@ export default function Home() {
                 transition: '0.2s',
               },
             }}
-            onClick={() => {}}>
+            onClick={() => {
+              Clicked(document.getElementById('inp').value)
+            }}>
             Submit!
           </Button>
+          <p>{}</p>
         </div>
       </Flex>
     </div>
