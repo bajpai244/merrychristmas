@@ -33,7 +33,8 @@ export default function Home() {
       sx={{
         fontFamily: 'xmas',
         backgroundColor: 'yellow',
-        backgroundImage: 'url(https://cloud-g8j7gwo2r.vercel.app/0image.png)',
+        backgroundImage:
+          'url(https://cloud-1258gysok.vercel.app/0tr-w-720.jpeg)',
         width: '100vw',
         height: '100vh',
       }}>
@@ -58,10 +59,11 @@ export default function Home() {
             alignItems: 'center',
             justifyContent: 'center',
           }}>
-          <h1 sx={{ textAlign: 'center', mb: [0], fontSize: [11] }}>
-            <span sx={{ color: 'blue' }}>Ho</span>
-            <span sx={{ color: 'red' }}>ho</span>
-            <span sx={{ color: 'purple' }}>ho!</span>
+          <h1
+            sx={{ textAlign: 'center', color: 'red', mb: [0], fontSize: [11] }}>
+            <span sx={{}}>Ho</span>
+            <span sx={{}}>ho</span>
+            <span sx={{}}>ho!</span>
           </h1>
           <h1 sx={{ textAlign: 'center', mt: [0], fontSize: [7] }}>
             How many <span sx={{ fontSize: [8] }}> Hack Clubbers </span> can you
