@@ -60,14 +60,25 @@ export default function Home() {
             justifyContent: 'center',
           }}>
           <h1
-            sx={{ textAlign: 'center', color: 'red', mb: [0], fontSize: [11] }}>
+            sx={{
+              textAlign: 'center',
+              color: 'red',
+              mb: [0],
+              fontSize: [11],
+              fontWeight: 'light',
+            }}>
             <span sx={{}}>Ho</span>
             <span sx={{}}>ho</span>
             <span sx={{}}>ho!</span>
           </h1>
-          <h1 sx={{ textAlign: 'center', mt: [0], fontSize: [7] }}>
-            How many <span sx={{ fontSize: [8] }}> Hack Clubbers </span> can you
-            find?
+          <h1
+            sx={{
+              textAlign: 'center',
+              mt: [0],
+              fontSize: [7],
+              fontWeight: 100,
+            }}>
+            How many <span sx={{}}> Hack Clubbers </span> can you find?
           </h1>
           <Input
             id='inp'
